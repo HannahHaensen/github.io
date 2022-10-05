@@ -6,9 +6,11 @@ I am interested in computer vision, augmented and virtual reality and in general
 
 # Publications
 ## 2022
-- 06/2022, [Deep Sensor Fusion with Pyramid Fusion Networks for 3D Semantic Segmentation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9827113), [GitHub](https://hannahhaensen.github.io/pyfu/)
-- 03/2022, [A Mixed Reality Guidance System for Blind and Visually Impaired People](https://ieeexplore.ieee.org/abstract/document/9757681)
-- 03/2022, [ARTFM: Augmented Reality Visualization of Tool Functionality Manuals in Operating Rooms](https://ieeexplore.ieee.org/abstract/document/9757491)
+06/2022 | [Deep Sensor Fusion with Pyramid Fusion Networks for 3D Semantic Segmentation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9827113)      | [GitHub](https://hannahhaensen.github.io/pyfu/)
+
+03/2022 | [A Mixed Reality Guidance System for Blind and Visually Impaired People](https://ieeexplore.ieee.org/abstract/document/9757681)                   | 
+
+03/2022 | [ARTFM: Augmented Reality Visualization of Tool Functionality Manuals in Operating Rooms](https://ieeexplore.ieee.org/abstract/document/9757491)  | 
 
 # Research Interest
 
