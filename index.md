@@ -16,4 +16,8 @@ I am interested in computer vision, augmented and virtual reality and in general
 
 # Contact
 
-Feel free to contact me! If you are a student at FAU and interested in bachelor or master thesis feel free to contact me. 
+Feel free to contact me! 
+
+# Bachelor/Master Thesis
+
+If you are a student at FAU and interested in bachelor or master thesis feel free to contact me. 
