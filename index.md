@@ -2,7 +2,7 @@
 
 I am a PhD student at the Human-Centered Computing and Extended Reality Lab (HEX Lab) at the Department of Artifical Intelligence in Biomedical Engineering, Friedrich-Alexander University Erlangen-Nürnberg (FAU). I am currently researching the topic of smart remote extended reality teleocnsultation and product guidance under the supervision of Daniel Roth. I received my bachelor's degree from HS Aalen, and my master's degree from the TH Ingolstadt, both in computer science. During my studies I worked in the industry at MAPAL Dr. Kress KG, c-Com GmbH, Carl Zeiss AG and AUDI AG.
 
-I am interested in computer vision, augmented and virtual reality and in general in many things in life. Besides being passionate about my PhD studies i like to play Rugby or go bouldering.![image](https://user-images.githubusercontent.com/22636930/194086561-360fce58-8127-4e0b-be6a-6e8e868d04c1.png)
+I am interested in computer vision, augmented and virtual reality and in general in many things in life. Besides being passionate about my PhD studies i like to play Rugby or go bouldering.
 
 # Publications
 
