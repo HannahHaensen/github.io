@@ -16,7 +16,7 @@ I am interested in computer vision, augmented and virtual reality and in general
 
 # Research Interest
 
-6D object pose estimation, NeRF, synthetic data generation
+teleconsultation, augmented reality, 6D object pose estimation, NeRF, synthetic data generation
 
 # Contact
 
