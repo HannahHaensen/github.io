@@ -10,13 +10,23 @@ I am interested in computer vision, augmented and virtual reality and in general
 
 To also find preprint checkout my google scholar profile: [Google Scholar](https://scholar.google.de/citations?user=1tKoj0EAAAAJ&hl=de)
 
-## 2022
+-------------------
 
-<img src="https://github.com/HannahHaensen/hannahhaensen.github.io/assets/22636930/80184232-0e85-4b26-967a-fa62b517adb3" alt="drawing" style="width:100px;"/> 06/2022 [Deep Sensor Fusion with Pyramid Fusion Networks for 3D Semantic Segmentation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9827113) [GitHub](https://hannahhaensen.github.io/pyfu/)
+#### IEEE Virtual Vehicle Symposium (IEEE IV)
+
+<img src="https://github.com/HannahHaensen/hannahhaensen.github.io/assets/22636930/80184232-0e85-4b26-967a-fa62b517adb3" alt="drawing" style="width:100px;"/> 06/2022 [Deep Sensor Fusion with Pyramid Fusion Networks for 3D Semantic Segmentation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9827113)
+
+[GitHub](https://hannahhaensen.github.io/pyfu/)
+
+-------------------
+
+#### IEEE VR Posters
 
 <img src="https://github.com/HannahHaensen/hannahhaensen.github.io/assets/22636930/2340df9b-920a-4378-8fa1-956ba771fd79" alt="drawing" style="width:100px;"/> 03/2022  [A Mixed Reality Guidance System for Blind and Visually Impaired People](https://ieeexplore.ieee.org/abstract/document/9757681)     
 
 <img src="https://github.com/HannahHaensen/hannahhaensen.github.io/assets/22636930/42a2da46-a9e9-41e6-83e8-c01f7bca38ba" alt="drawing" style="width:100px;"/> 03/2022  [ARTFM: Augmented Reality Visualization of Tool Functionality Manuals in Operating Rooms](https://ieeexplore.ieee.org/abstract/document/9757491)    
+
+-------------------
 
 
 # Research Interest
