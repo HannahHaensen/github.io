@@ -1,0 +1,98 @@
+    <section>
+        <br>
+        <div class="container">
+
+            <hr>
+            <h4 id="Preprints">Preprints</h4>
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <img width="100%"
+                         src="https://user-images.githubusercontent.com/22636930/231704527-8c070d6b-0ac8-4432-9bd2-17725a04d191.png">
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <span class="papertitle">NeRFtrinsic Four: An End-To-End Trainable NeRF Jointly Optimizing Diverse Intrinsic and Extrinsic Camera Parameters</span>
+                    <br>
+                    <span>H. Schieber</span>, <span style="font-weight: lighter">F. Deuser, B. Egger, N. Oswald and D. Roth</span>
+                    <br>
+                    <em></em>2023
+                    <br>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseNerftrinsic" role="button"
+                           aria-expanded="false" aria-controls="collapseNerftrinsic">
+                            Abstract
+                        </a>
+                        <a class="btn btn-dark"
+                           href="https://arxiv.org/pdf/2303.09412.pdf">Arxiv</a>
+                        <a class="btn btn-dark"
+                           href="https://hannahhaensen.github.io/nerftrinsic_four/">GitHub</a>
+                    </p>
+                    <div class="collapse" id="collapseNerftrinsic">
+                        <div class="card card-body">
+                            <p>
+                                We utilize Gaussian Fourier features to estimate extrinsic camera parameters and
+                                dynamically predict varying intrinsic camera parameters through the supervision of the
+                                projection error. Our approach outperforms existing joint optimization methods on LLFF and BLEFF. In
+                                addition to these existing datasets, we introduce a new dataset called iFF with varying
+                                intrinsic camera parameters. NeRFtrinsic Four is a step forward in joint optimization NeRF-based
+                                view synthesis and enables more realistic and flexible rendering in real-world scenarios
+                                with varying camera parameters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <img width="80%"
+                         src="https://github-production-user-asset-6210df.s3.amazonaws.com/22636930/272610460-e1e407ef-4249-4e5e-bc38-486e08204548.png">
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <a>
+                        <span class="papertitle">V2: DynaMoN: Motion-Aware Fast And Robust Camera Localization for Dynamic Neural Radiance Fields</span><br>
+                        <span style="font-weight: lighter">V1: DynaMoN: Motion-Aware Fast And Robust Camera Localization for Dynamic NeRF</span>
+                    </a>
+                    <br>
+                    <span style="font-weight: lighter">N. Schischka*</span>, <span>H. Schieber*</span>, <span
+                        style="font-weight: lighter">M. A. Karaoglu*, M. Görgülü*, F. Grötzner, A. Ladikos, D. Roth, N.
+                    Navab and B. Busam,  *denotes equal contribution</span>
+                    <br>
+                    <em></em>2024
+                    <br>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseDynamon" role="button"
+                           aria-expanded="false" aria-controls="collapseDynamon">
+                            Abstract
+                        </a>
+                        <a class="btn btn-dark"
+                           href="https://arxiv.org/pdf/2309.08927.pdf">Arxiv</a>
+                        <a class="btn btn-dark"
+                           href="https://hannahhaensen.github.io/DynaMoN/">GitHub/Website</a>
+                    </p>
+                    <div class="collapse" id="collapseDynamon">
+                        <div class="card card-body">
+                            <p>
+                                Dynamic reconstruction with neural radiance fields (NeRF) requires accurate camera
+                                poses. These are often hard to retrieve with existing structure-from-motion (SfM)
+                                pipelines as
+                                both camera and scene content can change. We propose DynaMoN that leverages simultaneous
+                                localization and mapping (SLAM) jointly with motion masking to handle dynamic scene
+                                content. Our robust SLAM-based tracking module significantly accelerates the training
+                                process of
+                                the dynamic NeRF while improving the quality of synthesized views at the same time.
+                                Extensive experimental validation on TUM RGB-D, BONN RGB-D Dynamic and the DyCheck's
+                                iPhone
+                                dataset, three real-world datasets, shows the advantages of DynaMoN both for camera pose
+                                estimation and novel view synthesis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+        </div>
+    </section>
