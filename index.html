@@ -139,12 +139,14 @@
                 <div class="col-12">
                     <h2>News</h2>
                     <ul>
-                        <li>[08/2024] One paper and one poster accepted at ISMAR 2024</li>
+                        <li>[08/2024] One paper (first author) and one poster (second author) accepted at ISMAR 2024</li>
                         <li>[04/2024] One paper accepted as Highlight at CVPR 2024 (shared first author)</li>
                         <li>[03/2024] One paper and one poster accepted at IEEE VR 2024 (second author)</li>
                         </li>
                     </ul>
-
+                    <p>
+                         Representative papers are <span style="background: lightblue">highlighted</span>.
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -185,22 +187,25 @@
             <h2>Research</h2>
             <div class="row">
                 <div class="col-12">
-                    <a href="#Preprints"><b style="font-size: large">Preprints</b></a> | <a href="#2022"><b
-                        style="font-size: large">2022</b></a> | <a href="#2023"><b style="font-size: large">2023</b></a>
-                    | <a href="#2024"><b style="font-size: large">2024</b></a>
+                    <a href="#Preprints"><b style="font-size: large">Preprints</b></a>
+                        | <a href="#2024"><b style="font-size: large">2024</b></a>
+                        | <a href="#2023"><b style="font-size: large">2023</b></a>
+                        | <a href="#2022"><b style="font-size: large">2022</b></a>
+
                     <br>
                     <br>
                 </div>
             </div>
         </div>
     </section>
+    <div preprint-html="preprints.html"></div>
+
     <div 2024-html="2024.html"></div>
     <!-- 2023 -->
     <div 2023-html="2023.html"></div>
     <!-- 2022 -->
     <div 2022-html="2022.html"></div>
     <!-- Preprints -->
-    <div preprint-html="preprints.html"></div>
     <section>
         <br>
         Copyright @ Hannah Schieber | This is my personal webpage.
@@ -218,10 +223,10 @@
         crossorigin="anonymous"></script>
 
     <script>
+    includeHTML('preprint-html');
     includeHTML('2024-html');
     includeHTML('2023-html');
     includeHTML('2022-html');
-    includeHTML('preprint-html');
     </script>
 
 
