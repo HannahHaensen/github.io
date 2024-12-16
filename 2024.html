@@ -4,6 +4,58 @@
         <hr>
         <h4 id="2024">2024</h4>
         <hr>
+
+        <div class="row" style="background: lightblue">
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                <img style="padding: 5%" width="100%"
+                     src="https://github-production-user-asset-6210df.s3.amazonaws.com/22636930/272610460-e1e407ef-4249-4e5e-bc38-486e08204548.png">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <a>
+                    <span class="papertitle">V2: DynaMoN: Motion-Aware Fast And Robust Camera Localization for Dynamic Neural Radiance Fields</span><br>
+                    <span style="font-weight: lighter">V1: DynaMoN: Motion-Aware Fast And Robust Camera Localization for Dynamic NeRF</span>
+                </a>
+                <br>
+                <span style="font-weight: lighter">N. Schischka*</span>, <span>H. Schieber*</span>, <span
+                    style="font-weight: lighter">M. A. Karaoglu*, M. Görgülü*, F. Grötzner, A. Ladikos, D. Roth, N.
+                    Navab and B. Busam,  *denotes equal contribution</span>
+               <br>
+                <em>IEEE Robotics and Automation Letters, </em>2024
+                <br>
+                <p class="d-inline-flex gap-1">
+                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseDynamon" role="button"
+                       aria-expanded="false" aria-controls="collapseDynamon">
+                        Abstract
+                    </a>
+                    <a class="btn btn-dark"
+                       href="https://arxiv.org/pdf/2309.08927.pdf">Preprint</a>
+                    <a class="btn btn-dark"
+                       href="https://ieeexplore.ieee.org/document/10777295">IEEE RA-L</a>
+                    <a class="btn btn-dark"
+                       href="https://hannahhaensen.github.io/DynaMoN/">GitHub/Website</a>
+                </p>
+                <div class="collapse" id="collapseDynamon">
+                    <div class="card card-body">
+                        <p>
+                            Dynamic reconstruction with neural radiance fields (NeRF) requires accurate camera
+                            poses. These are often hard to retrieve with existing structure-from-motion (SfM)
+                            pipelines as
+                            both camera and scene content can change. We propose DynaMoN that leverages simultaneous
+                            localization and mapping (SLAM) jointly with motion masking to handle dynamic scene
+                            content. Our robust SLAM-based tracking module significantly accelerates the training
+                            process of
+                            the dynamic NeRF while improving the quality of synthesized views at the same time.
+                            Extensive experimental validation on TUM RGB-D, BONN RGB-D Dynamic and the DyCheck's
+                            iPhone
+                            dataset, three real-world datasets, shows the advantages of DynaMoN both for camera pose
+                            estimation and novel view synthesis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
         <div class="row" style="background: lightblue">
             <div class="col-lg-4 col-md-4 col-sm-12 text-center">
                 <img style="padding: 5%" width="100%"
@@ -25,10 +77,9 @@
                     <a class="btn btn-dark"
                        href="https://arxiv.org/pdf/2303.09412.pdf">Arxiv</a>
                     <a class="btn btn-dark"
-                       href="https://hannahhaensen.github.io/nerftrinsic_four/">GitHub</a>
-
+                       href="https://www.sciencedirect.com/science/article/pii/S107731422400287X">CVIU</a>
                     <a class="btn btn-dark"
-                       href=" ">CVIU (coming soon)</a>
+                       href="https://hannahhaensen.github.io/nerftrinsic_four/">GitHub</a>
                 </p>
                 <div class="collapse" id="collapseNerftrinsic">
                     <div class="card card-body">
@@ -57,8 +108,9 @@
                 <span class="papertitle">Neural Motion Tracking: Formative Evaluation of Zero Latency Rendering</span>
                 <br>
                 <span
-                    style="font-weight: lighter">D. Roth, V. Bräutigam, N. Joshi, C. Kleinbeck,  </span><span>H. Schieber</span>, <span
-                    style="font-weight: lighter">, and J Kreimeier</span>
+                        style="font-weight: lighter">D. Roth, V. Bräutigam, N. Joshi, C. Kleinbeck,  </span><span>H. Schieber</span>,
+                <span
+                        style="font-weight: lighter">, and J Kreimeier</span>
                 <br>
                 <em>ACM Symposium on Virtual Reality Software and Technology (VRST '24), </em>2024
                 <br>
@@ -73,7 +125,31 @@
                 <div class="collapse" id="collapseNeuralTracking">
                     <div class="card card-body">
                         <p>
-                            Low motion-to-photon latencies between physical movement and rendering updates are crucial for an immersive virtual reality (VR) experience and to avoidusers’ discomfort and sickness. Current methods aim to minimize the delay between the motion measurement and rendering at the cost of increasing technical complexity and possibly decreasing accuracy. By relying on capturing physical motion, these strategies will, by nature, not result in zero latency rendering or will be based on prediction and resulting uncertainty. This paper presents and evaluates a novel alternative and proof of principle for VR motion tracking that could enable motion-to-photon latencies of zero and below zero in time. We termed our concept Neural Motion Tracking, which we define as the sensing and assessment of motion through human neural activation of the somatic nervous system. In contrast to measuring physical activity, the key principle is that we aim to utilize the physiological timeframe between a user’s intention and the execution of motion. We aim to foresee upcoming motion ahead of the physical movement, by sampling preceding electromyographic signals before the muscle activation. The electromechanical delay (EMD) between potential change in the muscle activation and actual physical movement opens a gap in which measurement can be taken and evaluated before the physical motion. In a first proof of principle, we evaluated the concept with two activities, arm bending and head rotation, measured with a binary activation measure. Our results indicate that it is possible to predict movement and update a rendering up to 2 ms before its physical execution, which is assessed by optical tracking after approximately 4 ms. However, to make the best use of this advantage, electromyography (EMG) sensor data should be as high quality as possible (i.e., low noise and from muscle-near electrodes). Our results empirically quantify this characteristic for the first time when compared to state-of-the-art optical tracking systems for VR. We discuss our results and potential pathways to motivate further work toward marker- and latency-less motion tracking.
+                            Low motion-to-photon latencies between physical movement and rendering updates are crucial
+                            for an immersive virtual reality (VR) experience and to avoidusers’ discomfort and sickness.
+                            Current methods aim to minimize the delay between the motion measurement and rendering at
+                            the cost of increasing technical complexity and possibly decreasing accuracy. By relying on
+                            capturing physical motion, these strategies will, by nature, not result in zero latency
+                            rendering or will be based on prediction and resulting uncertainty. This paper presents and
+                            evaluates a novel alternative and proof of principle for VR motion tracking that could
+                            enable motion-to-photon latencies of zero and below zero in time. We termed our concept
+                            Neural Motion Tracking, which we define as the sensing and assessment of motion through
+                            human neural activation of the somatic nervous system. In contrast to measuring physical
+                            activity, the key principle is that we aim to utilize the physiological timeframe between a
+                            user’s intention and the execution of motion. We aim to foresee upcoming motion ahead of the
+                            physical movement, by sampling preceding electromyographic signals before the muscle
+                            activation. The electromechanical delay (EMD) between potential change in the muscle
+                            activation and actual physical movement opens a gap in which measurement can be taken and
+                            evaluated before the physical motion. In a first proof of principle, we evaluated the
+                            concept with two activities, arm bending and head rotation, measured with a binary
+                            activation measure. Our results indicate that it is possible to predict movement and update
+                            a rendering up to 2 ms before its physical execution, which is assessed by optical tracking
+                            after approximately 4 ms. However, to make the best use of this advantage, electromyography
+                            (EMG) sensor data should be as high quality as possible (i.e., low noise and from
+                            muscle-near electrodes). Our results empirically quantify this characteristic for the first
+                            time when compared to state-of-the-art optical tracking systems for VR. We discuss our
+                            results and potential pathways to motivate further work toward marker- and latency-less
+                            motion tracking.
                         </p>
                     </div>
                 </div>
@@ -322,7 +398,18 @@
                 <div class="collapse" id="collapseVRReha">
                     <div class="card card-body">
                         <p>
-The biomechanically complex hand is crucial to a person's daily life and enables grasping, manipulating objects, and many more tasks. Impairments have a strong impact on a person's independence, quality of life, and overall well-being. Physiotherapy plays a crucial role after surgical interventions. Given the shortage of personnel and therapy session availability, enabling support and monitoring during the absence of the physiotherapist is a key future direction of medical care. Virtual reality (VR) has been shown to be able to support the rehabilitation of hand motor function. However, an individualized and motivating rehabilitation process is crucial to support the affected person until full recovery of the hand function. To address this, we present a prototype of a VR rehabilitation system that allows for the medical expert to a) control exercise planning and to b) receive a detailed report on the patients success. Our rehabilitation assistant is based on a gamified approach that targets the execution of crucial gestures for exercise.
+                            The biomechanically complex hand is crucial to a person's daily life and enables grasping,
+                            manipulating objects, and many more tasks. Impairments have a strong impact on a person's
+                            independence, quality of life, and overall well-being. Physiotherapy plays a crucial role
+                            after surgical interventions. Given the shortage of personnel and therapy session
+                            availability, enabling support and monitoring during the absence of the physiotherapist is a
+                            key future direction of medical care. Virtual reality (VR) has been shown to be able to
+                            support the rehabilitation of hand motor function. However, an individualized and motivating
+                            rehabilitation process is crucial to support the affected person until full recovery of the
+                            hand function. To address this, we present a prototype of a VR rehabilitation system that
+                            allows for the medical expert to a) control exercise planning and to b) receive a detailed
+                            report on the patients success. Our rehabilitation assistant is based on a gamified approach
+                            that targets the execution of crucial gestures for exercise.
                         </p>
                     </div>
                 </div>
