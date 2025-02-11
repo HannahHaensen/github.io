@@ -33,97 +33,104 @@
 
     </style>
     <script>
-    function includeHTML(attri) {
-      var z, i, elmnt, file, xhttp;
-      /* Loop through a collection of all HTML elements: */
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute(attri);
-        if (file) {
-          /* Make an HTTP request using the attribute value as the file name: */
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-              /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
+        function includeHTML(attri) {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute(attri);
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
             }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /* Exit the function: */
-          return;
         }
-      }
-    }
     </script>
 </head>
 
 <body>
- <header>
-        <br>
-        <br>
-        <br>
-     <div class="container" style="text-align: center">
-          <div class="row">
-                <div class="col-12">
-                    <a href="#About"><b style="font-size: large">About Me</b></a>
-                        | <a href="#Research"><b style="font-size: large">Research</b></a>
-                        | <a href="#News"><b style="font-size: large">News</b></a>
-                        | <a href="#Teaching"><b style="font-size: large">Teaching</b></a>
-                        | <a href="#Funding"><b style="font-size: large">Funding</b></a>
-                        | <a href="#award"><b style="font-size: large">Awards</b></a>
+<header>
+    <br>
+    <br>
+    <br>
+    <div class="container" style="text-align: center">
+        <div class="row">
+            <div class="col-12">
+                <a href="#About"><b style="font-size: large">About Me</b></a>
+                | <a href="#Research"><b style="font-size: large">Research</b></a>
+                | <a href="#News"><b style="font-size: large">News</b></a>
+                | <a href="#Teaching"><b style="font-size: large">Teaching</b></a>
+                | <a href="#Funding"><b style="font-size: large">Funding</b></a>
+                | <a href="#award"><b style="font-size: large">Awards</b></a>
 
-                    <br>
-                    <br>
-                </div>
+                <br>
+                <br>
             </div>
-     </div>
-  </header>
+        </div>
+    </div>
+</header>
 <div class="container">
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12">
-                    <p id="about"  class="name" style="text-align: center;">
+                    <p id="about" class="name" style="text-align: center;">
                         Hannah Schieber, PhD Student
                     </p>
                     <br>
                     <br>
                     <p>
-                        <h5>Bio</h5>
-                        I am a <b>PhD student</b> under the supervision of Prof Daniel Roth at the <b>Technical University Munich (TUM)/
-                        Friedrich-Alexander University Erlangen-Nürnberg (FAU)</b>. I am currently researching
-                        the topic of neural 3D content creation and guidance in 3D using extend reality.
-                        <br>
-                        Moreover, I am a <b>research assistant</b> at <b>Technical University of Munich (TUM),
-                        Germany</b>, assisting as tutor
-                        at several courses like:
-                        <a href="https://www.cs.cit.tum.de/camp/news/article/workshop-in-advanced-topics-in-3d-computer-vision-july-2023/">Advanced
-                            Topics in 3D Computer Vision</a>
-                        or <a
-                            href="https://www.cs.cit.tum.de/camp/teaching/seminars/modern-computer-vision-methods-ws-2023-24/">Modern
-                        Computer Vision Methods</a>
-                        <br>
-                        In winter term 2024/2025, I am holding the seminar Computer Vision in the Operating Room @ TUM.
+                    <h5>Bio</h5>
+                    I am a <b>PhD student</b> under the supervision of Prof Daniel Roth at the <b>Technical University
+                    Munich (TUM)/
+                    Friedrich-Alexander University Erlangen-Nürnberg (FAU)</b>. I am currently researching
+                    the topic of neural 3D content creation and guidance in 3D using extend reality.
+                    <br>
+                    Moreover, I am a <b>research assistant</b> at <b>Technical University of Munich (TUM),
+                    Germany</b>, assisting as tutor
+                    at several courses like:
+                    <a href="https://www.cs.cit.tum.de/camp/news/article/workshop-in-advanced-topics-in-3d-computer-vision-july-2023/">Advanced
+                        Topics in 3D Computer Vision</a>
+                    or <a
+                        href="https://www.cs.cit.tum.de/camp/teaching/seminars/modern-computer-vision-methods-ws-2023-24/">Modern
+                    Computer Vision Methods</a>
+                    <br>
+                    In winter term 2024/2025, I am holding the seminar Computer Vision in the Operating Room @ TUM.
                     </p>
                     <p>
-                        <h5>Visiting Research</h5>
-                        In the first half of 2024, I was a visiting PhD student at the <b>University of Otago, New Zealand</b>. There I
-                        researched the creation of outdoor 3D scenes for Virtual Reality using Neural Rendering in the Visual Computing Group under the supervision of
-                        Prof. Stefanie Zollmann.</p>
+                    <h5>Visiting Research</h5>
+                    In the first half of 2024, I was a visiting PhD student at the <b>University of Otago, New
+                    Zealand</b>. There I
+                    researched the creation of outdoor 3D scenes for Virtual Reality using Neural Rendering in the
+                    Visual Computing Group under the supervision of
+                    Prof. Stefanie Zollmann.</p>
                     </p>
                     <p>
                     <h5>Education</h5>
-                        Prior my PhD position, I received my <b>bachelor’s degree</b> from <b>HS Aalen</b>, and my <b>master’s
-                        degree</b> from <b>TH
-                        Ingolstadt</b>, both in computer science. I did my master's degree in the AUDI DUAL master program.
-                        During my bachelor studies, I gained experience in the industry
-                        at <b>MAPAL Dr. Kress KG, c-Com GmbH and Carl Zeiss AG</b>.
+                    Prior my PhD position, I received my <b>bachelor’s degree</b> from <b>HS Aalen</b>, and my <b>master’s
+                    degree</b> from <b>TH
+                    Ingolstadt</b>, both in computer science. I did my master's degree in the AUDI DUAL master program.
+                    During my bachelor studies, I gained experience in the industry
+                    at <b>MAPAL Dr. Kress KG, c-Com GmbH and Carl Zeiss AG</b>.
                     </p>
                     <p>
                         I am interested in computer vision, extended reality and in general in many things in life.
@@ -159,11 +166,15 @@
                 <div class="col-12">
                     <h2 id="News">News</h2>
                     <ul>
+                        <li>[01/2025] Two papers accepted at IEEE VR (one first author, one co-author)</li>
+                        <li>[01/2025] Our IEEE RA-L paper will be presented at ICRA 2025</li>
                         <li>[11/2024] One paper (shared first author) at IEEE RA-L</li>
                         <li>[10/2024] One paper (first author) at CVIU</li>
-                        <li>[08/2024] One paper (first author) and one poster (second author) accepted at ISMAR 2024</li>
-                        <li>[04/2024] One paper accepted as <b style="color: red">Highlight</b> at CVPR 2024 (shared first author)</li>
-                        <li>[03/2024] One paper and one poster accepted at IEEE VR 2024 (second author)</li>
+                        <li>[08/2024] One paper (first author) and one poster (second author) accepted at ISMAR 2024
+                        </li>
+                        <li>[04/2024] One paper accepted as <b style="color: red">Highlight</b> at CVPR 2024 (shared
+                            first author)
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -176,15 +187,15 @@
 
             <h2 id="Research">Research</h2>
 
-                    <p>
-                         Representative papers are <span style="background: lightblue">highlighted</span>.
-                    </p>
+            <p>
+                Representative papers are <span style="background: lightblue">highlighted</span>.
+            </p>
             <div class="row">
                 <div class="col-12">
                     <a href="#Preprints"><b style="font-size: large">Preprints</b></a>
-                        | <a href="#2024"><b style="font-size: large">2024</b></a>
-                        | <a href="#2023"><b style="font-size: large">2023</b></a>
-                        | <a href="#2022"><b style="font-size: large">2022</b></a>
+                    | <a href="#2024"><b style="font-size: large">2024</b></a>
+                    | <a href="#2023"><b style="font-size: large">2023</b></a>
+                    | <a href="#2022"><b style="font-size: large">2022</b></a>
                 </div>
             </div>
         </div>
@@ -199,6 +210,8 @@
     <div 2022-html="2022.html"></div>
     <br>
     <br>
+
+            <hr>
     <section>
 
         <div class="container">
@@ -214,7 +227,8 @@
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <i>Conferences</i>
                             <br>
-                            &nbsp;&nbsp;I was reviewer at IEEE VR, IEEE ISMAR, ACM VRST, BMVC, IEEE AIxVR and the WICV'23 workshop at ICCV.
+                            &nbsp;&nbsp;I was reviewer at IEEE VR, IEEE ISMAR, ACM VRST, BMVC, IEEE AIxVR and the
+                            WICV'23 workshop at ICCV.
                             <br>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -231,17 +245,21 @@
                 </div>
             </div>
 
+            <hr>
             <h2 id="Teaching">Teaching</h2>
             <div class="row">
                 <div class="col-sm-12 col-lg-6">
                     <h5>Seminars</h5>
                     <ul>
                         <li>[2024-2025] Computer Vision in the Operating Room @ TUM</li>
-                        <li>[2023] <a href="https://www.cs.cit.tum.de/camp/news/article/workshop-in-advanced-topics-in-3d-computer-vision-july-2023/">Advanced
-                            Topics in 3D Computer Vision</a> @ CAMP TUM </li>
+                        <li>[2023] <a
+                                href="https://www.cs.cit.tum.de/camp/news/article/workshop-in-advanced-topics-in-3d-computer-vision-july-2023/">Advanced
+                            Topics in 3D Computer Vision</a> @ CAMP TUM
+                        </li>
                         <li>[2023-2024] <a
-                            href="https://www.cs.cit.tum.de/camp/teaching/seminars/modern-computer-vision-methods-ws-2023-24/">Modern
-                        Computer Vision Methods</a> @ CAM TUM</li>
+                                href="https://www.cs.cit.tum.de/camp/teaching/seminars/modern-computer-vision-methods-ws-2023-24/">Modern
+                            Computer Vision Methods</a> @ CAM TUM
+                        </li>
                         </li>
                     </ul>
 
@@ -257,45 +275,66 @@
                 </div>
             </div>
 
+            <hr>
             <h2 id="Funding">Funding</h2>
             <div class="row">
                 <div class="col-sm-12 col-lg-12">
                     <h5>Stipends</h5>
                     <ul>
                         <li>[07/2024-01/2025] d.hip stipend</li>
-                        <li>[02/2024-06/2024] DAAD stipend for computer scientists (New Zealand) </li>
+                        <li>[02/2024-06/2024] DAAD stipend for computer scientists (New Zealand)</li>
                         <li>[09/2021-01/2024] d.hip stipend</li>
                     </ul>
 
                 </div>
             </div>
-            <h2 id="award">Awards</h2>
+            <hr>
             <div class="row">
-                <div class="col-sm-3 col-lg-3">
+
+                <div class="col-sm-12 col-lg-6 col-md-6">
+                <h2 id="award">Awards</h2>
                     <div class="row">
-                        <h5>Best Paper Honorable Mention</h5>
-                    </div>
-                    <div class="row">
-                       <img src="assets/img/1729625767010.jpg" style="width: 100%">
-                    </div>
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="row">
+                                <h5>Best Paper Honorable Mention</h5>
+                            </div>
+                            <div class="row">
+                                <img src="assets/img/1729625767010.jpg" style="width: 100%">
+                            </div>
 
 
+                        </div>
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="row">
+                                <h5>Best Project MARSS 2021</h5>
+                            </div>
+                            <div class="row">
+                                <img src="assets/img/marss.png" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-3 col-lg-3">
-                    <div class="row">
-                        <h5>Best Project MARSS 2021</h5>
-                    </div>
-                    <div class="row">
-                        <img src="assets/img/marss.png" style="width: 100%">
-                    </div>
-                </div>
-                <div class="col-sm-3 col-lg-3">
 
-                </div>
-                <div class="col-sm-3 col-lg-3">
+                <div class="col-sm-12 col-lg-6 col-md-6">
+                <h2 id="Drawings">Drawings</h2>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="row">
+                                <h5>Title Page Drawing for Journals Physiology Volume 133 Issue 2</h5>
+                            </div>
+                            <div class="row">
+                                <img src="assets/img/jn.2025.133.issue-2.cover.jpg" style="width: 50%">
+                                <a href="https://journals.physiology.org/doi/full/10.1152/jn.00389.2024">
+                                    Journal Reference
+                                </a>
+                            </div>
 
+
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
     <section>
@@ -314,12 +353,12 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 
-    <script>
+<script>
     includeHTML('preprint-html');
     includeHTML('2024-html');
     includeHTML('2023-html');
     includeHTML('2022-html');
-    </script>
+</script>
 
 
 </body>
